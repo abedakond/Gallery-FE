@@ -36,13 +36,13 @@ app.post('/gallery/upload', upload.single('image'), async (req: Request, res: Re
 
 	await Promise.all([
 		new Promise<void>((resolve, reject) => {
-			resizeLow.toFile('public/result/output_lr.jpg', (err, info) => {
+			resizeLow.toFile(`public/result/${req.file?.originalname}_lr.jpg`, (err, info) => {
 				if (err) reject(err);
 				else resolve();
 			});
 		}),
 		new Promise<void>((resolve, reject) => {
-			resizeHigh.toFile('public/result/output_hr.jpg', (err, info) => {
+			resizeHigh.toFile(`public/result/${req.file?.originalname}_hr.jpg`, (err, info) => {
 				if (err) reject(err);
 				else resolve();
 			});
