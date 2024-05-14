@@ -13,7 +13,6 @@ const FILE_TYPE_MAP: { [key: string]: string } = {
 	'image/png': 'png',
 	'image/jpeg': 'jpeg',
 	'image/jpg': 'jpg',
-	'image/JPG': 'JPG',
 };
 
 const destinationPath = './public/uploads/'
