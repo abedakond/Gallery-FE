@@ -128,3 +128,4 @@ dist
 /public/data
 *.JPG
 /build
+*.jpeg
