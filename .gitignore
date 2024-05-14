@@ -126,4 +126,7 @@ dist
 .yarn/install-state.gz
 .pnp.*
 *.jpg
+/public/data
+*.JPG
+/build
 *.jpeg
